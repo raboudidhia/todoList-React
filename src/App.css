@@ -22,7 +22,7 @@ body {
 
 /* Todo Container Styling */
 .Todo-container {
-  background-color: #2d2a42;
+  background-color: #1e0952; /* Set the background color */
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -32,16 +32,18 @@ body {
 .todo-input-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* Increase space between search bar and tasks */
 }
 
 .todo-input {
   flex-grow: 1;
-  padding: 0.5rem;
-  border: none;
+  padding: 0.75rem; /* Increase padding to make the search bar bigger */
+  border: 1px solid #6a42cc; /* Set border color */
   border-radius: 5px;
   margin-right: 0.5rem;
   outline: none;
+  background-color: transparent; /* Set background color to transparent */
+  color: white; /* Ensure text color is visible */
 }
 
 .todo-input::placeholder {
@@ -49,10 +51,10 @@ body {
 }
 
 .todo-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem; /* Increase padding to match the bigger search bar */
   background-color: #6a42cc;
   color: white;
-  border: none;
+  border: 1px solid #6a42cc; /* Set border color */
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
@@ -69,14 +71,19 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #8758ff;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem; /* Decrease the padding to reduce height */
+  border: 1px solid #6a42cc; /* Set border color */
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   transition: all 0.3s ease;
+  cursor: pointer; /* Ensure the cursor is a pointer */
+  width: 70%; /* Adjust width to fit the container */
+  margin-left: 42px; /* Align items to the right */
 }
 
 .Todo:hover {
   background-color: #6a42cc;
+  /* Adjust padding on hover if necessary */
 }
 
 .Todo-item-text {
@@ -84,12 +91,27 @@ body {
   font-size: 1rem;
   text-align: left;
   flex-grow: 1;
+  cursor: pointer; /* Ensure the cursor is a pointer */
+}
+
+.Todo-item-text.completed {
+  text-decoration: line-through; /* Cross out the text */
+  color: #a1a1a1; /* Optional: Change the color of completed tasks */
 }
 
 .Todo-item-actions {
   display: flex;
   align-items: center;
   margin-left: 1rem;
+}
+
+.Todo-item-actions .icon {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.Todo-item-actions .icon:hover {
+  color: #c5aeff;
 }
 
 .Todo-item-actions button {
@@ -110,6 +132,10 @@ body {
 
 .fa-edit {
   font-size: 1.2rem;
+}
+
+.todo-item {
+  cursor: pointer;
 }
 
 /* Add Animations */

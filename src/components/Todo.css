@@ -1,0 +1,52 @@
+.task-list {
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-item .icon {
+    margin-left: 10px;
+}
+
+.Todo-edit-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Todo-edit-input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #6a42cc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.Todo-edit-btn {
+  padding: 0.5rem 1rem;
+  background-color: #6a42cc;
+  color: white;
+  border: 1px solid #6a42cc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Todo-edit-btn:hover {
+  background-color: #4a31a3;
+}
+
+
+
+
+
+
